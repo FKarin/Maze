@@ -1,0 +1,97 @@
+body{
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Lucida Handwriting";
+	cursor: url("../img/paintlessbrush.png") 0 75, auto;
+}
+#canvas{
+    margin-top: 21.4vh;
+    margin-left: 42.8vh;
+    position: absolute;
+    height:61.3vh;
+}
+#canvas2{
+    margin-top: 20vh;
+    margin-left: 42.8vh;
+    position: absolute;
+    z-index: 0;
+    height:61.3vh;
+}
+#font{
+    margin-top: 13vh;
+    margin-left: 42vh;
+    height:7vh;
+    position: absolute;
+}
+#maze{
+    margin-top: 19.7vh;
+    margin-left: 42vh;
+    height:63vh;
+}
+#brush{
+    visibility: hidden;
+    height:20vh;
+}
+#tiger{
+    margin-top: 23.3vh;
+    margin-left: -51.2vh;
+    height:60vh;
+    position: absolute;
+    opacity:0;
+}
+#redpaint,#greenpaint,#bluepaint,#blackpaint{
+	margin-top:89.4vh;
+	position:absolute;
+}
+#redpaint{
+	margin-left:-40vh;
+}
+#greenpaint{
+	margin-left:-30vh;
+}
+#bluepaint{
+	margin-left:-20vh;
+}
+#blackpaint{
+	margin-left:-10vh;
+}
+#greenclick:hover{
+	cursor: url("../img/greencursor.png") 0 75, auto;
+}
+#redclick:hover{
+	cursor: url("../img/redcursor.png") 0 75, auto;
+}
+#blueclick:hover{
+	cursor: url("../img/bluecursor.png") 0 75, auto;
+}
+#blackclick:hover{
+	cursor: url("../img/blackcursor.png") 0 75, auto;
+}
+#blackbrush{
+    visibility: hidden;
+    height:20vh;
+    position: absolute;
+}
+#bluebrush{
+    visibility: hidden;
+    height:20vh;
+    position: absolute;
+}
+#redbrush{
+    visibility: hidden;
+    height:20vh;
+    position: absolute;
+}
+#greenbrush{
+    visibility: hidden;
+    height:20vh;
+    position: absolute;
+}
+#black,#red,#blue,#green{
+    margin-top: 23.3vh;
+    margin-left: -51.2vh;
+    height:60vh;
+    opacity:0;
+}

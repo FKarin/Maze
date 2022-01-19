@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Maze</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="img/paintbrush.png"/>
+    </head>
+    <body id="body">
+        <img src="img/font.png" id="font">
+        <canvas id="canvas" width="480" height="580" style="border:1px solid rgb(34, 214, 43,0);background-color: rgba(170, 117, 12, 0);"></canvas>
+        <canvas id="canvas2" width="550" height="580" style="border:1px solid rgba(170, 117, 12, 0);background-color: rgba(170, 117, 12, 0);"></canvas>
+        <img src="img/maze.png" id="maze">
+        <img src="img/tigerhead.png" id="black">
+        <img src="img/greentiger.png" id="green">
+        <img src="img/bluetiger.png" id="blue">
+        <img src="img/redtiger.png" id="red">
+        <img src="img/paintbrush.png" id="blackbrush">
+        <img src="img/bluebrush.png" id="bluebrush">
+        <img src="img/greenbrush.png" id="greenbrush">
+        <img src="img/redbrush.png" id="redbrush">
+        <img src="img/greenpaint.png" usemap="#greenclick" id="greenpaint">
+        <img src="img/redpaint.png" usemap="#redclick" id="redpaint">
+        <img src="img/bluepaint.png" usemap="#blueclick" id="bluepaint">
+        <img src="img/blackpaint.png" usemap="#blackclick" id="blackpaint">
+        <map name="greenclick">
+            <area id="greenclick" onclick="green()" coords="13,3,2,12,2,25,7,30,17,34,33,34,44,32,56,26,62,18,56,9,44,1,26,1" shape="poly">
+        </map>
+        <map name="blueclick">
+            <area id="blueclick" onclick="blue()" coords="13,3,2,12,2,25,7,30,17,34,33,34,44,32,56,26,62,18,56,9,44,1,26,1" shape="poly">
+        </map>
+        <map name="blackclick">
+            <area id="blackclick" onclick="black()" coords="13,3,2,12,2,25,7,30,17,34,33,34,44,32,56,26,62,18,56,9,44,1,26,1" shape="poly">
+        </map>
+        <map name="redclick">
+            <area id="redclick" onclick="red()" coords="13,3,2,12,2,25,7,30,17,34,33,34,44,32,56,26,62,18,56,9,44,1,26,1" shape="poly">
+        </map>
+        <audio id="sound"><source src="audio/brush.mp3" type="audio/mpeg"></audio>
+    </body>
+    <script type="text/javascript">
+        function greenchange() {
+            document.body.style.cursor=url('img/greencursor.png');
+        }
+    </script>
+    <script src="js/main.js"></script>
+</html>
